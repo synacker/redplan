@@ -12,6 +12,19 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <div class="container-fluid pos-fixed fixed-top z-top">
+      <header class="app-bar container bg-transparent fg-white pos-relative" data-role="appbar" data-expand-point="md"><button type="button" class="hamburger menu-down hidden"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+        <a href="index.html" class="brand fg-white no-hover text-bold">
+          <span>RED PLAN</span>
+        </a>
+
+        <ul class="app-bar-menu ml-auto text-upper collapsed" style="">
+          <li>
+            <a href="https://github.com/synacker/redplan" class="app-bar-item text-upper" target="_blank"><span id="github_redplan_href" class="mif-github"></span></a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <%= yield %>
 
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
