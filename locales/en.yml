@@ -1,3 +1,8 @@
 en:
-  title: The Red Plan
-  summary: The modern universal program manifest for communistic organization
+  main:
+    title: The Red Plan
+    summary: The modern universal program manifest for communistic organization
+    tagline: We are proletarians and we have a plan - The Red Plan
+    tagline2: The ghost of communism is haunting the world
+  menu:
+    manifest: Manifest

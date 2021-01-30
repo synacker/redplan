@@ -76,3 +76,13 @@ configure :build do
     ]
   }
 end
+
+helpers do
+  def last_update_time(file)
+    Time.parse `git log -1 --format=%cd #{file} 2>/dev/null`
+  end
+
+  def local_url(path)
+    I18n.locale == :en ? "#{path}.html" : "/#{I18n.locale}#{path}.html"
+  end
+end

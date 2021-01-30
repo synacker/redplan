@@ -1,21 +1,22 @@
 ---
-title: :title
+title: :main.title
 ---
 
 <div class="hero hero-bg text-center" id="main">
-  <%= image_tag 'logo-rp.svg', height: "100x100" %>
-  <h1 class="text-center fg-accent"><b>The Red Plan</b></h1>
-  <h3 class="text-center">The modern universal program manifest for communistic organization</h3>
+  <%= image_tag 'logo-rp.svg', height: "100" %>
+  <h1 class="text-center fg-accent"><b><%= t('main.title') %></b></h1>
+  <h3 class="text-center"><%= t('main.summary') %></h3>
+  <h5 class="text-center"><%= t('main.tagline') %></h5>
   <a href="https://www.bard.edu/library/arendt/pdfs/Marx-CommunistManifesto.pdf" class="command-button fg-white" download>
     <span class="mif-download icon"></span>
     <span class="caption">
-                  The Red Plan
+                  <%= t('main.title') %>
                   <small>v<span class="version-number text-bold">0.0.0</span></small>
     </span>
   </a>
-</div>
-<div class="container-fluid text-left pt-10 pb-20" id="Overview">
-  <div class="container text-center">
-    <div class="h1"><span class="reduce-1 enlarge-1-md text-bold">The ghost of communism is haunting the world</span></div>
+  <div class="container-fluid text-left pt-10 pb-20" id="Overview">
+    <div class="container text-center">
+      <div class="h1"><span class="reduce-1 enlarge-1-md text-bold"><%= t('main.tagline2') %></span></div>
+    </div>
   </div>
 </div>
